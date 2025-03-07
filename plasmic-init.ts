@@ -34,3 +34,21 @@ PLASMIC.registerComponent(HelloWorld, {
     children: 'slot'
   }
 });
+
+import { PdfViewer } from "./components/PdfViewer";
+
+// Register the PdfViewer component in Plasmic
+PLASMIC.registerComponent(PdfViewer, {
+  name: "PdfViewer",
+  props: {
+    pdfUrl: {
+      type: "string",
+      defaultValue: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+    },
+    pageNumber: {
+      type: "number",
+      defaultValue: 1,
+    },
+    className: "string",
+  },
+});
