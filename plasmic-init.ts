@@ -23,3 +23,14 @@ export const PLASMIC = initPlasmicLoader({
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // PLASMIC.registerComponent(...);
+import { HelloWorld } from './components/HelloWorld';
+
+// ...
+
+PLASMIC.registerComponent(HelloWorld, {
+  name: 'HelloWorld',
+  props: {
+    verbose: 'boolean',
+    children: 'slot'
+  }
+});
