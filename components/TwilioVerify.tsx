@@ -15,9 +15,9 @@ const TwilioVerify: React.FC = () => {
     setLoading(true);
     setStatus(null);
 
-    const accountSid = "AC2b922576fa53a007890683b5bce2db46"; // Replace with your Twilio Account SID
-    const authToken = "ce17bde23333c8c022026a6cb9953329"; // Replace with your Twilio Auth Token
-    const serviceSid = "VA3d1836520aca64f90f4e093f048bc249"; // Replace with your Twilio Verify Service SID
+    const accountSid = process.env.NEXT_PUBLIC_TWILIO_SID || ""; // Do NOT expose in frontend
+const authToken = process.env.TWILIO_AUTH_TOKEN || "";
+const serviceSid = process.env.NEXT_PUBLIC_TWILIO_SERVICE_SID || "";
 
     const credentials = btoa(`${accountSid}:${authToken}`); // Basic Auth encoding
 
