@@ -52,3 +52,18 @@ PLASMIC.registerComponent(PdfViewer, {
     className: "string",
   },
 });
+
+
+import TwilioVerify from "./components/TwilioVerify"; // Adjust path if needed
+
+PLASMIC.registerComponent(TwilioVerify, {
+  name: "TwilioVerify",
+  displayName: "Twilio Phone Verification",
+  props: {
+    phoneNumber: {
+      type: "string",
+      defaultValue: "",
+      description: "Phone number to send verification code",
+    },
+  },
+});
