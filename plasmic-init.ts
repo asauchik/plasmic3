@@ -35,23 +35,7 @@ PLASMIC.registerComponent(HelloWorld, {
   }
 });
 
-import { PdfViewer } from "./components/PdfViewer";
 
-// Register the PdfViewer component in Plasmic
-PLASMIC.registerComponent(PdfViewer, {
-  name: "PdfViewer",
-  props: {
-    pdfUrl: {
-      type: "string",
-      defaultValue: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    },
-    pageNumber: {
-      type: "number",
-      defaultValue: 1,
-    },
-    className: "string",
-  },
-});
 
 
 import TwilioVerify from "./components/TwilioVerify"; // Adjust path if needed
@@ -65,5 +49,5 @@ PLASMIC.registerComponent(TwilioVerify, {
       defaultValue: "",
       description: "Phone number to send verification code",
     },
-  },
+  } as const, // <-- Ensures TypeScript infers exact types
 });
