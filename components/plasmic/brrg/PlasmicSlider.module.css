@@ -1,0 +1,85 @@
+.ariaSlider:global(.__wab_instance) {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  color: var(--token-5aarfo-HNWD2);
+  font-family: var(--token-yiHEI5FyjMUa);
+  font-size: var(--token-JpIpK30Qrs7z);
+  line-height: var(--token--QYqjyLdttqL);
+  width: 100%;
+  row-gap: var(--token-ydTKCy551KbC);
+}
+.ariaSlider[data-disabled]:global(.__wab_instance) {
+  opacity: 0.5;
+}
+.freeBox__hz6P7 {
+  display: flex;
+  flex-direction: row;
+}
+.freeBox__hz6P7 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-left: calc(0px - var(--token-tJqSlCzZQ4C8));
+  width: calc(100% + var(--token-tJqSlCzZQ4C8));
+}
+.freeBox__hz6P7 > :global(.__wab_flex-container) > *,
+.freeBox__hz6P7 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__hz6P7 > :global(.__wab_flex-container) > picture > img,
+.freeBox__hz6P7
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: var(--token-tJqSlCzZQ4C8);
+}
+.text___4VwOn {
+  position: relative;
+}
+.freeBox__lyjZq {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  padding-top: var(--token-Gf8fOfjiK1-w);
+  padding-bottom: var(--token-Gf8fOfjiK1-w);
+  width: 100%;
+  min-width: 0;
+}
+.background {
+  display: flex;
+  background: var(--token-DxMoQg64i3KP);
+  height: var(--token-tJqSlCzZQ4C8);
+  width: 100%;
+  min-width: 0;
+  border-radius: 99px;
+}
+.ariaSliderTrack:global(.__wab_instance) {
+  cursor: pointer;
+  opacity: 1;
+  box-sizing: border-box;
+  background: none;
+  height: var(--token-tJqSlCzZQ4C8);
+  width: 100%;
+  min-width: 0;
+}
+.ariaSlider[data-disabled] .ariaSliderTrack:global(.__wab_instance) {
+  cursor: not-allowed;
+}
+.sliderThumb__qzQkB:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  margin-top: var(--token-1xVS7oLVuXjp);
+}
+.foreground {
+  display: block;
+  background: var(--token-d3ur2Nkr-hvv);
+  height: var(--token-tJqSlCzZQ4C8);
+  border-radius: 99px 0rem 0rem 99px;
+}
+.description:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
