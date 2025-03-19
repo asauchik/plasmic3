@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -41,7 +41,8 @@
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "YUiM7yqBWAqsh8KSnrdj7",
@@ -69,7 +70,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-query"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "a3pmZtcpA5asHkNtN3SGoF",
@@ -84,7 +86,8 @@
       "globalContextsFilePath": "",
       "splitsProviderFilePath": "",
       "codeComponents": [],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -106,7 +109,8 @@
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "hjKYmYi6HMwK6TRyk7ew5R",
@@ -164,7 +168,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-cms"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -186,7 +191,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -244,7 +250,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jkU633o1Cz7HrJdwdxhVHk",
@@ -298,7 +305,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -698,7 +706,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "4vjRXvnb4XuY6J15w9oRcQ",
@@ -726,7 +735,8 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "5ZtnypMovRHeeP3YTdPCYL",
@@ -754,7 +764,8 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "d2Pfbr6bN5UwJ4ss7Fh3HB",
@@ -26883,7 +26894,8 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "gmeH6XgPaBtkt51HunAo4g",
@@ -27091,7 +27103,8 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "u4Y4MGpSRpZo7PLABQqvDf",
@@ -27425,6 +27438,34 @@
           "cssFilePath": "plasmic/brrg/PlasmicTooltip.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "sP6ms71BJ0P1",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "u4Y4MGpSRpZo7PLABQqvDf",
+          "renderModuleFilePath": "plasmic/brrg/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/brrg/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/new-page"
+        },
+        {
+          "id": "9-Ed6s5bD5Aa",
+          "name": "AboutUs",
+          "type": "managed",
+          "projectId": "u4Y4MGpSRpZo7PLABQqvDf",
+          "renderModuleFilePath": "plasmic/brrg/PlasmicAboutUs.tsx",
+          "importSpec": {
+            "modulePath": "../pages/about-us.tsx"
+          },
+          "cssFilePath": "plasmic/brrg/PlasmicAboutUs.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/about-us"
         }
       ],
       "icons": [
@@ -27452,6 +27493,26 @@
           "id": "RpwTEpk0bivM",
           "name": "TriangleFilledIcon",
           "moduleFilePath": "plasmic/brrg/icons/PlasmicIcon__TriangleFilled.tsx"
+        },
+        {
+          "id": "V_LDpAde5ASU",
+          "name": "Icon29Icon",
+          "moduleFilePath": "plasmic/brrg/icons/PlasmicIcon__Icon29.tsx"
+        },
+        {
+          "id": "ZSznElQVgbO0",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/brrg/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "csp9Mky7zu_0",
+          "name": "Icon2Icon",
+          "moduleFilePath": "plasmic/brrg/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "avRa0qBamuGy",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/brrg/icons/PlasmicIcon__Icon3.tsx"
         }
       ],
       "images": [
@@ -27464,6 +27525,21 @@
           "id": "AqheyE913PsN",
           "name": "LogoBrassBullet1-28-25.png",
           "filePath": "../public/plasmic/brrg/images/logoBrassBullet12825Png.png"
+        },
+        {
+          "id": "bRm9AXPVSL1V",
+          "name": "logo.svg",
+          "filePath": "../public/plasmic/brrg/images/logoSvg.svg"
+        },
+        {
+          "id": "3CrfLjdmIMje",
+          "name": "linkedin-sales-solutions-46bom4lObsA-unsplash.jpg",
+          "filePath": "../public/plasmic/brrg/images/linkedinSalesSolutions46Bom4LObsAUnsplashJpg.jpg"
+        },
+        {
+          "id": "ebClXGjl_zRi",
+          "name": "background3.png",
+          "filePath": "../public/plasmic/brrg/images/background3Png.png"
         }
       ],
       "indirect": false,
@@ -27487,6 +27563,111 @@
           "name": "Compy4C5Ebrk9OmV",
           "displayName": "HelloWorld",
           "componentImportPath": ""
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "hsyJcmBceSfPzvvXzVTuk7",
+      "projectApiToken": "a25mdMh3tcPRSuNv1E2rvIBmDBpG9JCKRYuxIkD7RITUZyuawzoUKjFwhNk2fb6znQOxWRaXBJkUCi3JMRwBQ",
+      "projectName": "lodash",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/lodash/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [],
+      "customFunctions": []
+    },
+    {
+      "projectId": "itBdcjth19Wasd6ngAYxWR",
+      "projectApiToken": "pJhvXesaoH425YiAJjn9GHDxeWDga53GXsyZpNGKlO9WKig0ai1puOivs1GJSpPWSXxCDR78cMtivrw",
+      "projectName": "react-twitter-widgets",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_twitter_widgets/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "RZqWqT2DfR",
+          "name": "TweetWrapper",
+          "displayName": "hostless-react-twitter-widgets-tweet",
+          "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
+        },
+        {
+          "id": "x2j0abJR_t",
+          "name": "TimelineWrapper",
+          "displayName": "hostless-react-twitter-widgets-timeline",
+          "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
+        },
+        {
+          "id": "zqQBieQcfl",
+          "name": "FollowWrapper",
+          "displayName": "hostless-react-twitter-widgets-follow",
+          "componentImportPath": "@plasmicpkgs/react-twitter-widgets"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "xfguyo8p9zs8FxMdioQAoN",
+      "projectApiToken": "IBf7p2rBXRKu0JiJNy21fpG1htIOtMFhxjpoB017UEMVujLWTqjchEi3QOjyXVnaN68flKNs2PzkD6YJoTcA",
+      "projectName": "plasmic-contentful",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_contentful/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_contentful/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "2evg2Dug_px",
+          "name": "ContentfulFetcher",
+          "displayName": "ContentfulFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-contentful"
+        },
+        {
+          "id": "XJVyShAqlB9",
+          "name": "ContentfulField",
+          "displayName": "ContentfulField",
+          "componentImportPath": "@plasmicpkgs/plasmic-contentful"
+        },
+        {
+          "id": "lXSCSEWn2xb",
+          "name": "ContentfulCredentialsProvider",
+          "displayName": "Contentful CredentialsProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-contentful"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "kS7YGZfVr6mU43XDQjXELc",
+      "projectApiToken": "ByNEUEKB7Hd9g2PkeOVot8RZTanYGn3rlmcjYTbULlTb9TEjfypxJ4uDH0HeEMQazKWvfHB4CFNXVgy8YmEyA",
+      "projectName": "react-chartjs-2",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_chartjs_2/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "0Qywk3bhW-8",
+          "name": "SimpleChart",
+          "displayName": "hostless-react-chartjs-2-simple-chart",
+          "componentImportPath": "@plasmicpkgs/react-chartjs-2"
         }
       ],
       "customFunctions": []
@@ -27524,6 +27705,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.335",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.335/dist/plasmic.schema.json"
+  "cliVersion": "0.1.336",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.336/dist/plasmic.schema.json"
 }

@@ -426,7 +426,21 @@ function PlasmicModal__RenderFunc(props: {
       trigger={
         (hasVariant($state, "noTrigger", "noTrigger") ? false : true)
           ? renderPlasmicSlot({
-              defaultContents: <Button label={"Open Modal"} />,
+              defaultContents: (
+                <Button
+                  label={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___8Qcqm
+                      )}
+                    >
+                      {"Open Modal"}
+                    </div>
+                  }
+                />
+              ),
 
               value: args.trigger
             })
@@ -472,15 +486,15 @@ type NodeComponentProps<T extends NodeNameType> =
     args?: PlasmicModal__ArgsType;
     overrides?: NodeOverridesType<T>;
   } & Omit<PlasmicModal__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
-    /* Specify args directly as props*/ Omit<
-      PlasmicModal__ArgsType,
-      ReservedPropsType
-    > &
-    /* Specify overrides for each element directly as props*/ Omit<
+    // Specify args directly as props
+    Omit<PlasmicModal__ArgsType, ReservedPropsType> &
+    // Specify overrides for each element directly as props
+    Omit<
       NodeOverridesType<T>,
       ReservedPropsType | VariantPropType | ArgPropType
     > &
-    /* Specify props for the root element*/ Omit<
+    // Specify props for the root element
+    Omit<
       Partial<React.ComponentProps<NodeDefaultElementType[T]>>,
       ReservedPropsType | VariantPropType | ArgPropType | DescendantsType<T>
     >;

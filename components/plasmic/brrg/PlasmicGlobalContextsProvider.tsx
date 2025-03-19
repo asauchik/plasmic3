@@ -7,23 +7,26 @@
 import * as React from "react";
 import { hasVariant, ensureGlobalVariants } from "@plasmicapp/react-web";
 import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider";
-import { CmsCredentialsProvider } from "@plasmicpkgs/plasmic-cms";
+import { ContentfulCredentialsProvider } from "@plasmicpkgs/plasmic-contentful";
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
   >;
-  cmsCredentialsProviderProps?: Partial<
-    Omit<React.ComponentProps<typeof CmsCredentialsProvider>, "children">
+  contentfulCredentialsProviderProps?: Partial<
+    Omit<React.ComponentProps<typeof ContentfulCredentialsProvider>, "children">
   >;
 }
 
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, antdConfigProviderProps, cmsCredentialsProviderProps } =
-    props;
+  const {
+    children,
+    antdConfigProviderProps,
+    contentfulCredentialsProviderProps
+  } = props;
 
   return (
     <AntdConfigProvider
@@ -31,7 +34,7 @@ export default function GlobalContextsProvider(
       borderRadius={
         antdConfigProviderProps && "borderRadius" in antdConfigProviderProps
           ? antdConfigProviderProps.borderRadius!
-          : 2
+          : 4
       }
       colorBgBase={
         antdConfigProviderProps && "colorBgBase" in antdConfigProviderProps
@@ -86,7 +89,7 @@ export default function GlobalContextsProvider(
       removeLoading={
         antdConfigProviderProps && "removeLoading" in antdConfigProviderProps
           ? antdConfigProviderProps.removeLoading!
-          : undefined
+          : true
       }
       sizeStep={
         antdConfigProviderProps && "sizeStep" in antdConfigProviderProps
@@ -104,7 +107,7 @@ export default function GlobalContextsProvider(
           : true
           ? {
               fontFamily: "Inter",
-              fontSize: "14px",
+              fontSize: "12px",
               fontWeight: "400",
               lineHeight: "1.2",
               color: "#164E63",
@@ -118,33 +121,29 @@ export default function GlobalContextsProvider(
           : false
       }
     >
-      <CmsCredentialsProvider
-        {...cmsCredentialsProviderProps}
-        databaseId={
-          cmsCredentialsProviderProps &&
-          "databaseId" in cmsCredentialsProviderProps
-            ? cmsCredentialsProviderProps.databaseId!
-            : undefined
+      <ContentfulCredentialsProvider
+        {...contentfulCredentialsProviderProps}
+        accessToken={
+          contentfulCredentialsProviderProps &&
+          "accessToken" in contentfulCredentialsProviderProps
+            ? contentfulCredentialsProviderProps.accessToken!
+            : "WZmxoTpEU7UtXNdZBtyLsqD0B-MBR4sTocZ76GufAoI"
         }
-        databaseToken={
-          cmsCredentialsProviderProps &&
-          "databaseToken" in cmsCredentialsProviderProps
-            ? cmsCredentialsProviderProps.databaseToken!
-            : undefined
+        environment={
+          contentfulCredentialsProviderProps &&
+          "environment" in contentfulCredentialsProviderProps
+            ? contentfulCredentialsProviderProps.environment!
+            : "master"
         }
-        host={
-          cmsCredentialsProviderProps && "host" in cmsCredentialsProviderProps
-            ? cmsCredentialsProviderProps.host!
-            : "https://data.plasmic.app"
-        }
-        locale={
-          cmsCredentialsProviderProps && "locale" in cmsCredentialsProviderProps
-            ? cmsCredentialsProviderProps.locale!
-            : undefined
+        space={
+          contentfulCredentialsProviderProps &&
+          "space" in contentfulCredentialsProviderProps
+            ? contentfulCredentialsProviderProps.space!
+            : "avw6h6fqmre1"
         }
       >
         {children}
-      </CmsCredentialsProvider>
+      </ContentfulCredentialsProvider>
     </AntdConfigProvider>
   );
 }
